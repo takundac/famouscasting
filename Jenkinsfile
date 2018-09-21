@@ -18,4 +18,8 @@ node {
         stage 'Deploy'
             sh './deployment/deploy_prod.sh'
     }
+    catch(err){
+        "Build failed"
+      throw err
+    }
 }
