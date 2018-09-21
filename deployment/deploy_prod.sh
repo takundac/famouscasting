@@ -1,8 +1,8 @@
 #!/bin/sh
 
-ssh root@165.227.226.173 <<EOF
+ssh root@138.68.174.46 <<EOF
   cd famouscasting
-  git pull
+  git pull origin master
   source /opt/envs/famouscasting/bin/activate
   pip install -r requirements.txt
   ./manage.py migrate
