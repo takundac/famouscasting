@@ -1,5 +1,12 @@
-%script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
-%script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js')
+%html{:lang => 'en'}
+%head
+  %meta{'charset':'text/html'}
+  %meta{'name':'viewport', 'http-equiv':'Content-Type', 'content':'width=device-width, initial-scale=1.0'}
+
+  - load staticfiles
+      %link{'rel':'stylesheet', 'type':'text/css', 'href':"{% static 'famouscasting/app.css' %}"}
+      %script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+      %script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js')
 
 .text-justify-center
   Hello World

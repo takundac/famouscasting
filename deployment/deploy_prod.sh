@@ -1,11 +1,11 @@
 #!/bin/sh
 
-ssh root@206.189.21.218 <<EOF
-  cd djtrump
-  git pull upstream master
-  source /opt/envs/djtrump/bin/activate
+ssh root@165.227.226.173 <<EOF
+  cd famouscasting
+  git pull
+  source /opt/envs/famouscasting/bin/activate
   pip install -r requirements.txt
   ./manage.py migrate
-  sudo supervisorctl restart djtrump
+  sudo supervisorctl restart famouscasting
   exit
 EOF
