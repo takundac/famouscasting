@@ -53,22 +53,51 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'famouscasting.urls'
 
+# TEMPLATES = [
+#     {
+#         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        # 'DIRS': [
+        #     os.path.join(BASE_DIR, 'famouscasting/templates'),
+        # ],
+#         'APP_DIRS': True,
+#         'OPTIONS': {
+#             'loaders': (
+#             ('django.template.loaders.cached.Loader', (
+#                 'hamlpy.template.loaders.HamlPyFilesystemLoader',
+#                 'hamlpy.template.loaders.HamlPyAppDirectoriesLoader',
+#                 ))
+#             ),
+#
+            # 'context_processors': [
+            #     'django.template.context_processors.debug',
+            #     'django.template.context_processors.request',
+            #     'django.contrib.auth.context_processors.auth',
+            #     'django.contrib.messages.context_processors.messages',
+            # ],
+#         },
+#     },
+# ]
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'famouscasting/templates'),
         ],
-        'APP_DIRS': True,
         'OPTIONS': {
+            'loaders': (
+                'hamlpy.template.loaders.HamlPyFilesystemLoader',
+                'hamlpy.template.loaders.HamlPyAppDirectoriesLoader',
+            ),
+
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-        },
-    },
+        }
+    }
 ]
 
 WSGI_APPLICATION = 'famouscasting.wsgi.application'
