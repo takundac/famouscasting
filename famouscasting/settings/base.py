@@ -129,5 +129,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'famouscasting/static'),
 )
-
-DONALD_IMAGES_PATH = os.path.join(BASE_DIR, 'famouscasting/static/famouscasting/images')
