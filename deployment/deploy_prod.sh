@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh root@138.68.174.46 <<EOF
+ssh root@206.189.17.132 <<EOF
   cd famouscasting
   git pull origin master
   source /opt/envs/famouscasting/bin/activate
